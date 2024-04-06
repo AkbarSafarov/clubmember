@@ -1,0 +1,376 @@
+include _header.jade
+include _left_panel.jade
+<div class="dashboard_right_content">
+    <div class="dashboard_content_title">
+        <a href="cards.html" class="name_title btn_back">Card settings</a>
+    </div>
+    <div class="setting_block">
+        <div class="setting_name">Type of cards</div>
+        <div class="setting_body center">
+            <div class="left">
+                <div class="field radio">
+                    <label>
+                        <input type="radio" name="type-card">
+                        <i></i>
+                        <span>Public card</span>
+                    </label>
+                </div>
+                <div class="field radio">
+                    <label>
+                        <input type="radio" name="type-card">
+                        <i></i>
+                        <span>Private card</span>
+                    </label>
+                </div>
+            </div>
+            <div class="btn_button save disabled">Save</div>
+        </div>
+    </div>
+    <div class="setting_block">
+        <div class="setting_name">Basic information</div>
+        <div class="setting_body center">
+            <div class="left">
+                <div class="field checkbox">
+                    <label>
+                        <input type="checkbox" name="cashback-card">
+                        <i></i>
+                        <span>Cashback card</span>
+                    </label>
+                </div>
+                <div class="field checkbox">
+                    <label>
+                        <input type="checkbox" name="discount-card">
+                        <i></i>
+                        <span>Discount card</span>
+                    </label>
+                </div>
+                <div class="field checkbox">
+                    <label>
+                        <input type="checkbox" name="membership-card">
+                        <i></i>
+                        <span>Membership card</span>
+                    </label>
+                </div>
+            </div>
+            <div class="btn_button save disabled">Save</div>
+        </div>
+    </div>
+    <div class="setting_block">
+        <div class="setting_name">Card settings</div>
+        <div class="setting_body">
+            <div class="left">
+                <div class="btns">
+                    <div class="btn_button set_cashbacks">Set up Cashbacks</div>
+                    <div class="btn_button set_discounts">Set up Discounts</div>
+                    <div class="btn_button set_withdraws">Set up Withdraws</div>
+                    <div class="btn_button set_membership">Set up Membership card</div>
+                </div>
+            </div>
+            <div class="btn_button save disabled">Save</div>
+        </div>
+    </div>
+    <div class="setting_block">
+        <div class="setting_name">Card information</div>
+        <div class="setting_body end">
+            <div class="left">
+                <div class="field">
+                    <div class="field_name">Message</div>
+                    <input type="text" value="Only up to 4 people">
+                </div>
+            </div>
+            <div class="btn_button save disabled">Save</div>
+        </div>
+    </div>
+    <div class="setting_block">
+        <div class="setting_body card_design_main">
+            <div class="card_design">
+                <div class="colors_wrap">
+                    <div class="colors card_color">
+                        <div class="name">Card color</div>
+                        <div class="colors_list">
+                            <div class="color active"style="background: #1B4638;"></div>
+                            <div class="color"style="background: #E6FA81;"></div>
+                            <div class="color"style="background: #991B1B;"></div>
+                            <div class="color"style="background: #C6E8E4;"></div>
+                            <div class="color"style="background: #E6CEF1;"></div>
+                            <div class="color white"style="background: #fff;"></div>
+                            <div class="color"style="background: #6366F1;"></div>
+                            <div class="color"style="background: #EAB308;"></div>
+                            <div class="color_picker">
+                                <input id="bg-picker" value="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colors text_color">
+                        <div class="name">Text color</div>
+                        <div class="colors_list">
+                            <div class="color"style="background: #1B4638;"></div>
+                            <div class="color"style="background: #E6FA81;"></div>
+                            <div class="color"style="background: #991B1B;"></div>
+                            <div class="color"style="background: #C6E8E4;"></div>
+                            <div class="color"style="background: #E6CEF1;"></div>
+                            <div class="color white active"style="background: #fff;"></div>
+                            <div class="color"style="background: #6366F1;"></div>
+                            <div class="color"style="background: #EAB308;"></div>
+                            <div class="color_picker">
+                                <input id="color-picker" value="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="card_top">
+                        <div class="card_left">
+                            <div class="name">Arrows & Sparrows</div>
+                            <div class="card_type">Gold Status</div>
+                        </div>
+                        <div class="card_right">
+                            <div class="card_parsent">0% cashback</div>
+                            <div class="card_parsent">0% cashback</div>
+                        </div>
+                    </div>
+                    <div class="cash">400 000 UZS</div>
+                </div>
+            </div>
+            <div class="btn_button save">Save</div>
+        </div>
+    </div>
+</div>
+<div class="form-popup-wrapper set_cashbacks_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Cashback settings</div>
+            <form action="">
+                <div class="field_row_main">
+                    <div class="field_row column-6">
+                        <div class="field">
+                            <div class="field_name">Status title</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Number of visits</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Sum</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Period in days</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Cashback %</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="delete_field"></div>
+                    </div>
+                    <div class="field_row column-6">
+                        <div class="field">
+                            <div class="field_name">Status title</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Number of visits</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Sum</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Period in days</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Cashback %</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="delete_field"></div>
+                    </div>
+                    <div class="field_row column-6">
+                        <div class="field">
+                            <div class="field_name">Status title</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Number of visits</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Sum</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Period in days</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Cashback %</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="delete_field"></div>
+                    </div>
+                </div>
+                <div class="btn_button small border add_status_btn">Add new status</div>
+                <div class="form_btns">
+                    <button class="btn_button border">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="form-popup-wrapper set_discounts_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Discount settings</div>
+            <form action="">
+                <div class="field_row_main">
+                    <div class="field_row column-5">
+                        <div class="field">
+                            <div class="field_name">Status title</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Number of visits</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Sum</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Cashback %</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="delete_field"></div>
+                    </div>
+                    <div class="field_row column-5">
+                        <div class="field">
+                            <div class="field_name">Status title</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Number of visits</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Sum</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Cashback %</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="delete_field"></div>
+                    </div>
+                    <div class="field_row column-5">
+                        <div class="field">
+                            <div class="field_name">Status title</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Number of visits</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Sum</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="field">
+                            <div class="field_name">Cashback %</div>
+                            <input type="text" name="">
+                        </div>
+                        <div class="delete_field"></div>
+                    </div>
+                </div>
+                <div class="btn_button small border add_status_btn">Add new status</div>
+                <div class="form_btns">
+                    <button class="btn_button border">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="form-popup-wrapper set_withdraws_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Withdraw settings</div>
+            <form action="">
+                <div class="fields_radio">
+                    <div class="field radio">
+                        <label>
+                            <input type="radio" value="0" checked name="withdraw">
+                            <i></i>
+                            <span>Sum</span>
+                        </label>
+                    </div>
+                    <div class="field radio">
+                        <label>
+                            <input type="radio" value="1" name="withdraw">
+                            <i></i>
+                            <span>Percent</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="field_row column-2 number_fields">
+                    <div class="field">
+                        <div class="field_name">Minimum withdraw</div>
+                        <input type="text" name="minimum-withdraw" placeholder="0">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Maximum withdraw</div>
+                        <input type="text" name="maximum-withdraw" placeholder="0">
+                    </div>
+                </div>
+                <div class="field_row column-2 parsent_fields disabled">
+                    <div class="field">
+                        <div class="field_name">Minimum withdraw in %</div>
+                        <input type="text" name="minimum-withdra-pr" placeholder="0">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Maximum withdraw in %</div>
+                        <input type="text" name="maximum-withdraw-pr" placeholder="0">
+                    </div>
+                </div>
+                <div class="form_btns">
+                    <button class="btn_button border">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="form-popup-wrapper set_membership_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Membership card settings</div>
+            <form action="">
+                <div class="field">
+                    <div class="field_name">Expire Period</div>
+                    <select id="">
+                        <option value="">Select from the list</option>
+                        <option value="1 year">1 year</option>
+                        <option value="2 year">2 year</option>
+                        <option value="3 year">3 year</option>
+                        <option value="4 year">4 year</option>
+                    </select>
+                </div>
+                <div class="form_btns">
+                    <button class="btn_button border">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+include _footer.jade

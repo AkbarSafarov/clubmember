@@ -1,0 +1,92 @@
+include _header.jade
+include _left_panel.jade
+<div class="dashboard_right_content">
+    <div class="dashboard_content_title">
+        <div class="name_title">Cards</div>
+        <div class="btn_button icon_plus create_employee">Create new employee</div>
+    </div>
+    <div class="cards_list">
+        <a href="card-settings.html" class="card_item" style="background: #1B4638;color: #F3F4F6;">
+            <div class="card_top">
+                <div class="card_left">
+                    <div class="name">Arrows & Sparrows</div>
+                    <div class="card_type">Private card</div>
+                </div>
+                <div class="card_right">
+                    <div class="card_parsent">30% cashback</div>
+                </div>
+            </div>
+            <div class="cash">400 000 UZS</div>
+        </a>
+        <a href="card-settings.html" class="card_item" style="background: #55864F;color: #F3F4F6;">
+            <div class="card_top">
+                <div class="card_left">
+                    <div class="name">Arrows & Sparrows</div>
+                    <div class="card_type">Gold Status</div>
+                </div>
+                <div class="card_right">
+                    <div class="card_parsent">10% discount</div>
+                </div>
+            </div>
+        </a>
+        <a href="card-settings.html" class="card_item" style="background: #C6E8E4;">
+            <div class="card_top">
+                <div class="card_left">
+                    <div class="name">Arrows & Sparrows</div>
+                    <div class="card_type">Gold Status</div>
+                </div>
+                <div class="card_right">
+                    <div class="card_parsent">5% discount</div>
+                    <div class="card_parsent">5% cashback</div>
+                </div>
+            </div>
+            <div class="cash">100 000 UZS</div>
+        </a>
+    </div>
+</div>
+<div class="form-popup-wrapper employee_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Create new employee</div>
+            <form action="">
+                <div class="field_row column-2">
+                    <div class="field">
+                        <div class="field_name">First name</div>
+                        <input type="text" name="first-name" placeholder="Enter first name">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Last name</div>
+                        <input type="text" name="last-name" placeholder="Enter last name">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Phone number</div>
+                        <input type="text" name="phone-number" placeholder="+998">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Password</div>
+                        <input type="text" name="password" placeholder="password" value="">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Account type</div>
+                        <select name="account-type" id="">
+                            <option value="">Select from the list</option>
+                            <option value="Waiter">Waiter</option>
+                            <option value="Cashier">Cashier</option>
+                            <option value="Administrator">Administrator</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Date of birth</div>
+                        <input type="text" name="date-birth" placeholder="DD/MM/YYYY" value="">
+                    </div>
+                </div>
+                <div class="form_btns">
+                    <button class="btn_button border">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+include _footer.jade

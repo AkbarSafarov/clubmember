@@ -1,0 +1,124 @@
+include _header.jade
+	include _left_panel.jade
+	<div class="dashboard_right_content">
+		<div class="dashboard_content_title">
+			<div class="name_title">Dashboard</div>
+			<div class="dropdown_select date_select active">
+				<div class="btn_button border dropdown_select_name name"><div class="icon"></div>This month</div>
+				<div class="dropdown_body">
+					<div><div class="item">This month</div></div>
+					<div><div class="item">This week</div></div>
+					<div><div class="item">This year</div></div>
+					<div><div class="item custom_date">Custom <input type="text" name="custom_date" id="custom_date"></div></div>
+				</div>
+			</div>
+		</div>	
+		<div class="dashboard_info_banners">
+			<div class="item_banner cardholders_card">
+				<div class="name">Number of cardholders</div>
+				<div class="number">389</div>
+				<div class="label">+12%</div>
+			</div>
+			<div class="item_banner issued_card">
+				<div class="name">Issued cards</div>
+				<div class="number">14</div>
+				<div class="label">+5%</div>
+			</div>
+			<div class="item_banner orders_card">
+				<div class="name">Orders</div>
+				<div class="number">170</div>
+				<div class="label">+22%</div>
+			</div>
+			<div class="item_banner cash_card">
+				<div class="name">Cash backs</div>
+				<div class="number">1,9M</div>
+				<div class="label">+3%</div>
+			</div>
+			<div class="item_banner discount_card">
+				<div class="name">Discount</div>
+				<div class="number">2,5M</div>
+				<div class="label">+19%</div>
+			</div>
+		</div>
+		<div class="dashboard_row">
+			<div class="grafic_block">
+				<div class="title_block">
+					<div class="title">Sales</div>
+					<a href="" class="btn_button border small">Last week</a>
+				</div>
+				<div class="grafic_body">
+					<img src="files/grafic.svg" alt="">
+				</div>
+			</div>
+			<div class="notifications_block">
+				<div class="title_block">
+					<div class="title">Sales</div>
+					<a href="" class="label">All notifications</a>
+				</div>
+				<div class="notifications_body">
+					<div class="item">
+						<div class="item_left">
+							<div class="code">AAA 10000</div>
+							<div class="name">Requested cashback</div>
+						</div>
+						<div class="item_right">
+							<div class="time">20-03-2024 19:44</div>
+							<div class="status pending">Pending</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_left">
+							<div class="code">AAA 10000</div>
+							<div class="name">Requested cashback</div>
+						</div>
+						<div class="item_right">
+							<div class="time">20-03-2024 19:44</div>
+							<div class="status rejected">Rejected</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_left">
+							<div class="code">AAA 10000</div>
+							<div class="name">Requested cashback</div>
+						</div>
+						<div class="item_right">
+							<div class="time">20-03-2024 19:44</div>
+							<div class="status pending">Pending</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_left">
+							<div class="code">AAA 10000</div>
+							<div class="name">Requested cashback</div>
+						</div>
+						<div class="item_right">
+							<div class="time">20-03-2024 19:44</div>
+							<div class="status approved">Approved</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_left">
+							<div class="code">AAA 10000</div>
+							<div class="name">Requested cashback</div>
+						</div>
+						<div class="item_right">
+							<div class="time">20-03-2024 19:44</div>
+							<div class="status approved">Approved</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_left">
+							<div class="code">AAA 10000</div>
+							<div class="name">Requested cashback</div>
+						</div>
+						<div class="item_right">
+							<div class="time">20-03-2024 19:44</div>
+							<div class="status approved">Approved</div>
+						</div>
+					</div>
+				</div>
+				<div class="loading"><span></span></div>
+			</div>
+		</div>							
+	</div>
+include _footer.jade

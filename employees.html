@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайтл</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/lightpick@latest/css/lightpick.css">
+    <link rel="stylesheet" type="text/css" href="css/spectrum.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="site_wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="/">
+                    <img src="files/logo.svg" alt="" class="pc">
+                    <img src="files/logo-mobile.svg" alt="" class="mobile">
+                </a>
+            </div>
+            <div class="right_header">
+                <div class="notifications active">
+                    <div class="name">
+                        <div class="icon"></div>Notifications
+                    </div>
+                </div>
+                <div class="dropdown_select header__lang">
+                    <div class="dropdown_select_name header__lang-title">English</div>
+                    <div class="dropdown_body">
+                        <div><a href="#" class="item">English</a></div>
+                        <div><a href="#" class="item">Русский</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content_block_wr">
+            <div class="dashboard_left_panel">
+                <div class="login_label">
+                    <div class="ava">
+                        <img src="files/ava.svg" alt="">
+                    </div>
+                    <div class="login_right">
+                        <div class="name">Arrows & Sparrows</div>
+                        <a href="" class="log_out_btn">Log out</a>
+                    </div>
+                </div>
+                <div class="burger"></div>
+                <div class="dashboard_menu">
+                    <ul>
+                        <li class="opened">
+                            <a href="dashboard.html">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 10V3L4 14H11L11 21L20 10L13 10Z" stroke="#11150E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="name">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="order.html">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01" stroke="#11150E" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                                <span class="name">Orders</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="issued-cards.html">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 10H21M7 15H8M12 15H13M6 19H18C19.6569 19 21 17.6569 21 16V8C21 6.34315 19.6569 5 18 5H6C4.34315 5 3 6.34315 3 8V16C3 17.6569 4.34315 19 6 19Z" stroke="#11150E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="name">Issued cards</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="membership.html">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 20H22V18C22 16.3431 20.6569 15 19 15C18.0444 15 17.1931 15.4468 16.6438 16.1429M17 20H7M17 20V18C17 17.3438 16.8736 16.717 16.6438 16.1429M7 20H2V18C2 16.3431 3.34315 15 5 15C5.95561 15 6.80686 15.4468 7.35625 16.1429M7 20V18C7 17.3438 7.12642 16.717 7.35625 16.1429M7.35625 16.1429C8.0935 14.301 9.89482 13 12 13C14.1052 13 15.9065 14.301 16.6438 16.1429M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM21 10C21 11.1046 20.1046 12 19 12C17.8954 12 17 11.1046 17 10C17 8.89543 17.8954 8 19 8C20.1046 8 21 8.89543 21 10ZM7 10C7 11.1046 6.10457 12 5 12C3.89543 12 3 11.1046 3 10C3 8.89543 3.89543 8 5 8C6.10457 8 7 8.89543 7 10Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="name">Membership</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="coupons.html">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#11150E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="name">Coupons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="employees.html">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4.35418C12.7329 3.52375 13.8053 3 15 3C17.2091 3 19 4.79086 19 7C19 9.20914 17.2091 11 15 11C13.8053 11 12.7329 10.4762 12 9.64582M15 21H3V20C3 16.6863 5.68629 14 9 14C12.3137 14 15 16.6863 15 20V21ZM15 21H21V20C21 16.6863 18.3137 14 15 14C13.9071 14 12.8825 14.2922 12 14.8027M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="#11150E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="name">Employees</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cards.html">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z" stroke="#11150E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="#11150E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="name">Cards</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="company-settings.html">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.5523 5.44772 21 6 21H9M19 10L21 12M19 10V20C19 20.5523 18.5523 21 18 21H15M9 21C9.55228 21 10 20.5523 10 20V16C10 15.4477 10.4477 15 11 15H13C13.5523 15 14 15.4477 14 16V20C14 20.5523 14.4477 21 15 21M9 21H15" stroke="#11150E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="name">Company settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dashboard_right_content">
+                <div class="dashboard_content_title">
+                    <div class="name_title">Employees</div>
+                    <div class="search_block">
+                        <form action="">
+                            <button type="submit"></button>
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="btn_button icon_plus create_employee">Create new employee</div>
+                </div>
+                <div class="dashboard_table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Phone number</th>
+                                <th>Type</th>
+                                <th>Full name</th>
+                                <th>Date of Birth</th>
+                                <th>Created at</th>
+                                <th>Status</th>
+                                <th width="1">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="phone-number">+(998) 90 819-12-90</td>
+                                <td class="account-type">Cashier</td>
+                                <td>
+                                    <span class="first-name">Miss Jonathan</span>
+                                    <span class="last-name">Dooley MD</span>
+                                </td>
+                                <td class="date-birth">03/20/2000</td>
+                                <td>03/21/2024 18:50</td>
+                                <td>
+                                    <div class="status_inactive">Inactive</div>
+                                </td>
+                                <td>
+                                    <div class="dropdown_select">
+                                        <div class="dropdown_select_name action_btn"></div>
+                                        <div class="dropdown_body">
+                                            <div>
+                                                <div class="item deactivate_btn">Deactivate card</div>
+                                            </div>
+                                            <div>
+                                                <div class="item edit_btn_employee">Edit</div>
+                                            </div>
+                                            <div>
+                                                <div class="item delete_btn">Delete</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="phone-number">+(998) 90 819-12-90</td>
+                                <td class="account-type">Waiter</td>
+                                <td>
+                                    <span class="first-name">Manuel</span>
+                                    <span class="last-name">Huels</span>
+                                </td>
+                                <td class="date-birth">03/20/2000</td>
+                                <td>03/21/2024 18:50</td>
+                                <td>
+                                    <div class="status_active">Active</div>
+                                </td>
+                                <td>
+                                    <div class="dropdown_select">
+                                        <div class="dropdown_select_name action_btn"></div>
+                                        <div class="dropdown_body">
+                                            <div>
+                                                <div class="item deactivate_btn">Deactivate card</div>
+                                            </div>
+                                            <div>
+                                                <div class="item edit_btn_employee">Edit</div>
+                                            </div>
+                                            <div>
+                                                <div class="item delete_btn">Delete</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="phone-number">+(998) 90 819-12-90</td>
+                                <td class="account-type">Cashier</td>
+                                <td>
+                                    <span class="first-name">Miss Jonathan</span>
+                                    <span class="last-name">Dooley MD</span>
+                                </td>
+                                <td class="date-birth">03/20/2000</td>
+                                <td>03/21/2024 18:50</td>
+                                <td>
+                                    <div class="status_inactive">Inactive</div>
+                                </td>
+                                <td>
+                                    <div class="dropdown_select">
+                                        <div class="dropdown_select_name action_btn"></div>
+                                        <div class="dropdown_body">
+                                            <div>
+                                                <div class="item deactivate_btn">Deactivate card</div>
+                                            </div>
+                                            <div>
+                                                <div class="item edit_btn_employee">Edit</div>
+                                            </div>
+                                            <div>
+                                                <div class="item delete_btn">Delete</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="phone-number">+(998) 90 819-12-90</td>
+                                <td class="account-type">Waiter</td>
+                                <td>
+                                    <span class="first-name">Manuel</span>
+                                    <span class="last-name">Huels</span>
+                                </td>
+                                <td class="date-birth">03/20/2000</td>
+                                <td>03/21/2024 18:50</td>
+                                <td>
+                                    <div class="status_active">Active</div>
+                                </td>
+                                <td>
+                                    <div class="dropdown_select">
+                                        <div class="dropdown_select_name action_btn"></div>
+                                        <div class="dropdown_body">
+                                            <div>
+                                                <div class="item deactivate_btn">Deactivate card</div>
+                                            </div>
+                                            <div>
+                                                <div class="item edit_btn_employee">Edit</div>
+                                            </div>
+                                            <div>
+                                                <div class="item delete_btn">Delete</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="phone-number">+(998) 90 819-12-90</td>
+                                <td class="account-type">Cashier</td>
+                                <td>
+                                    <span class="first-name">Miss Jonathan</span>
+                                    <span class="last-name">Dooley MD</span>
+                                </td>
+                                <td class="date-birth">03/20/2000</td>
+                                <td>03/21/2024 18:50</td>
+                                <td>
+                                    <div class="status_inactive">Inactive</div>
+                                </td>
+                                <td>
+                                    <div class="dropdown_select">
+                                        <div class="dropdown_select_name action_btn"></div>
+                                        <div class="dropdown_body">
+                                            <div>
+                                                <div class="item deactivate_btn">Deactivate card</div>
+                                            </div>
+                                            <div>
+                                                <div class="item edit_btn_employee">Edit</div>
+                                            </div>
+                                            <div>
+                                                <div class="item delete_btn">Delete</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="phone-number">+(998) 90 819-12-90</td>
+                                <td class="account-type">Waiter</td>
+                                <td>
+                                    <span class="first-name">Manuel</span>
+                                    <span class="last-name">Huels</span>
+                                </td>
+                                <td class="date-birth">03/20/2000</td>
+                                <td>03/21/2024 18:50</td>
+                                <td>
+                                    <div class="status_active">Active</div>
+                                </td>
+                                <td>
+                                    <div class="dropdown_select">
+                                        <div class="dropdown_select_name action_btn"></div>
+                                        <div class="dropdown_body">
+                                            <div>
+                                                <div class="item deactivate_btn">Deactivate card</div>
+                                            </div>
+                                            <div>
+                                                <div class="item edit_btn_employee">Edit</div>
+                                            </div>
+                                            <div>
+                                                <div class="item delete_btn">Delete</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="form-popup-wrapper employee_popup">
+                <div class="formExtraWrapper">
+                    <div class="close-form"></div>
+                    <div class="form_block">
+                        <div class="title">Create new employee</div>
+                        <form action="">
+                            <div class="field_row column-2">
+                                <div class="field">
+                                    <div class="field_name">First name</div>
+                                    <input type="text" name="first-name" placeholder="Enter first name">
+                                </div>
+                                <div class="field">
+                                    <div class="field_name">Last name</div>
+                                    <input type="text" name="last-name" placeholder="Enter last name">
+                                </div>
+                                <div class="field">
+                                    <div class="field_name">Phone number</div>
+                                    <input type="text" name="phone-number" placeholder="+998">
+                                </div>
+                                <div class="field">
+                                    <div class="field_name">Password</div>
+                                    <input type="text" name="password" placeholder="password" value="">
+                                </div>
+                                <div class="field">
+                                    <div class="field_name">Account type</div>
+                                    <select name="account-type" id="">
+                                        <option value="">Select from the list</option>
+                                        <option value="Waiter">Waiter</option>
+                                        <option value="Cashier">Cashier</option>
+                                        <option value="Administrator">Administrator</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <div class="field_name">Date of birth</div>
+                                    <input type="text" name="date-birth" placeholder="DD/MM/YYYY" value="">
+                                </div>
+                            </div>
+                            <div class="form_btns">
+                                <button class="btn_button border">Discard</button>
+                                <button type="submit" class="btn_button">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="alert-popup-wrapper deactivate_popup">
+                <div class="alertExtraWrapper">
+                    <div class="alert_block">
+                        <div class="icon"></div>
+                        <div class="title">You are going to deactivate account <br>+(998) 90 819-12-90, are you sure?</div>
+                        <div class="btns">
+                            <button class="btn_button border cancel">No, cancel</button>
+                            <button type="submit" class="btn_button red">Yes, deactivate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert-popup-wrapper delete_popup">
+                <div class="alertExtraWrapper">
+                    <div class="alert_block">
+                        <div class="icon"></div>
+                        <div class="title">You are going to delete account <br>+(998) 90 819-12-90, are you sure?</div>
+                        <div class="btns">
+                            <button class="btn_button border cancel">No, cancel</button>
+                            <button type="submit" class="btn_button red">Yes, delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notifications_alert_fixed">
+                <div class="notifications_alert successfully opened">
+                    <div class="note">Data saved successfully</div>
+                    <div class="close"></div>
+                </div>
+                <div class="notifications_alert error opened">
+                    <div class="note">Something went wrong</div>
+                    <div class="close"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert-popup-wrapper log_out_popup">
+        <div class="alertExtraWrapper">
+            <div class="alert_block">
+                <div class="icon"></div>
+                <div class="title">Are you sure you want to log out?</div>
+                <div class="btns">
+                    <button class="btn_button border cancel">No, stay</button>
+                    <button type="submit" class="btn_button">Yes, log out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/spectrum.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js">
+    </script>
+    <script src="https://unpkg.com/lightpick@latest/lightpick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

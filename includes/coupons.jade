@@ -1,0 +1,220 @@
+include _header.jade
+include _left_panel.jade
+<div class="dashboard_right_content">
+    <div class="dashboard_content_title">
+        <div class="name_title">Coupons</div>
+        <div class="search_block">
+            <form action="">
+                <button type="submit"></button>
+                <input type="text" placeholder="Search">
+            </form>
+        </div>
+        <div class="btn_button icon_plus create_coupon">Create new coupon</div>
+    </div>
+    <div class="dashboard_table">
+        <table>
+            <thead>
+                <tr>
+                    <th width="1">Coupon ID</th>
+                    <th width="1">Order ID</th>
+                    <th width="1">Discount</th>
+                    <th>Issued at</th>
+                    <th>Status</th>
+                    <th>Used by</th>
+                    <th>Used at</th>
+                    <th>Expires at</th>
+                    <th width="1">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CPN 22143</td>
+                    <td>–</td>
+                    <td class="percentage">20%</td>
+                    <td>03/21/2024 18:50</td>
+                    <td><div class="staus_acquired">Acquired</div></td>
+                    <td>Dana Green</td>
+                    <td>03/22/2024 23:55</td>
+                    <td>03/22/2024</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item deactivate_btn">Deactivate card</div>
+                                </div>
+                                <div>
+                                    <div class="item edit_btn_coupon">Edit</div>
+                                </div>
+                                <div>
+                                    <div class="item delete_btn">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="used">
+                    <td>CPN 22143</td>
+                    <td>#94743</td>
+                    <td class="percentage">20%</td>
+                    <td>03/21/2024 18:50</td>
+                    <td><div class="staus_used">Used</div></td>
+                    <td>Dana Green</td>
+                    <td>03/22/2024 23:55</td>
+                    <td>03/22/2024</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item deactivate_btn">Deactivate card</div>
+                                </div>
+                                <div>
+                                    <div class="item edit_btn_coupon">Edit</div>
+                                </div>
+                                <div>
+                                    <div class="item delete_btn">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="used">
+                    <td>CPN 22143</td>
+                    <td>#94743</td>
+                    <td class="percentage">20%</td>
+                    <td>03/21/2024 18:50</td>
+                    <td><div class="staus_used">Used</div></td>
+                    <td>Dana Green</td>
+                    <td>03/22/2024 23:55</td>
+                    <td>03/22/2024</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item deactivate_btn">Deactivate card</div>
+                                </div>
+                                <div>
+                                    <div class="item edit_btn_coupon">Edit</div>
+                                </div>
+                                <div>
+                                    <div class="item delete_btn">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="used">
+                    <td>CPN 22143</td>
+                    <td>#94743</td>
+                    <td class="percentage">20%</td>
+                    <td>03/21/2024 18:50</td>
+                    <td><div class="staus_used">Used</div></td>
+                    <td>Dana Green</td>
+                    <td>03/22/2024 23:55</td>
+                    <td>03/22/2024</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item deactivate_btn">Deactivate card</div>
+                                </div>
+                                <div>
+                                    <div class="item edit_btn_coupon">Edit</div>
+                                </div>
+                                <div>
+                                    <div class="item delete_btn">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CPN 22143</td>
+                    <td>#94743</td>
+                    <td class="percentage">20%</td>
+                    <td>03/21/2024 18:50</td>
+                    <td><div class="status_notused">Not used</div></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>03/22/2024</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item deactivate_btn">Deactivate card</div>
+                                </div>
+                                <div>
+                                    <div class="item edit_btn_coupon">Edit</div>
+                                </div>
+                                <div>
+                                    <div class="item delete_btn">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="form-popup-wrapper coupon_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Create new coupon</div>
+            <form action="">
+                <div class="field_row column-4">
+                    <div class="field">
+                        <div class="field_name">Discount percentage</div>
+                        <input type="text" name="percentage" placeholder="Enter percent %">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Discount amount</div>
+                        <input type="text" name="discount-amount" placeholder="Enter amount">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Expires in</div>
+                        <input type="text" name="expires-in" placeholder="7 days" value="7 days">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Number of guests</div>
+                        <input type="text" name="guests" placeholder="4 people" value="4 people">
+                    </div>
+                </div>
+                <div class="form_btns">
+                    <button class="btn_button border">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="alert-popup-wrapper deactivate_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to deactivate account <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, deactivate</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="alert-popup-wrapper delete_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to delete account <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+include _footer.jade

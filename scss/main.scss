@@ -147,6 +147,8 @@ img, textarea, input, table {
         display: block;
         max-width: 100%;
         min-width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
     }
 
     select {

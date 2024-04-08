@@ -146,6 +146,7 @@ img, textarea, input, table {
         color: #11150E;
         display: block;
         max-width: 100%;
+        min-width: 100%;
     }
 
     select {
@@ -2657,7 +2658,7 @@ img, textarea, input, table {
             padding: 28px 10px 0 0;
         }
 
-        @media all and (max-width: 475px) {
+        @media all and (max-width: 760px) {
             display: block;
 
             .name_day {
@@ -2670,8 +2671,13 @@ img, textarea, input, table {
             display: flex;
             gap: 16px;
 
+            @media all and (max-width: 760px) {
+                width: 100%;
+            }
+
             .field {
                 flex: 0 0 calc(50% - 8px);
+                width: calc(50% - 8px);
             }
         }
     }

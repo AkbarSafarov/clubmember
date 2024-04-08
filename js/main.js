@@ -9,6 +9,19 @@ $(function(){
         $(this).parent().toggleClass('opened');
     });
 
+    $('.login_arrow').on('click', function(){
+        $('.card_list_drop').toggleClass('active');
+    });
+
+    $('.dropdown_select .item').on('click', function(){
+        const parent = $(this).parents('.dropdown_select');
+        const name = $(this).text();
+
+        $(this).addClass('active');
+        parent.find('.dropdown_select_name').text(name);
+        parent.removeClass('opened');
+    });
+
     $(document).on('click touchstart', function(e){
         if( $(e.target).closest('.dropdown_select').length) 
           return;
@@ -20,9 +33,10 @@ $(function(){
 	var $body = $(document.body),
       	$html = $(document.documentElement);
 
-    function formPopup($btn,$wrap){
+    function formPopup($btn,$wrap, clear){
 
         var closeForm = $('.formExtraWrapper .close-form'),
+            cancel = $('.formExtraWrapper .cancel'),
             formWrap = $($wrap),
             formBtn = $($btn),
             formOpened = 'opened',
@@ -32,7 +46,24 @@ $(function(){
             formWrap.removeClass(formOpened);
             $html.removeClass(overflowHidden);
         });
+        cancel.on('click', function(event) {
+            event.preventDefault();
+            formWrap.removeClass(formOpened);
+            $html.removeClass(overflowHidden);
+        });
+
         formBtn.on('click', function(event) {
+            if(clear) {
+                formWrap.find('form')[0].reset();
+                const $selectElement = $($wrap + ' .field select');
+                const $optionToSelect = $selectElement.find('option[value=""]');
+                console.log($selectElement)
+                if ($optionToSelect.length > 0) {
+                    $selectElement.val(null);
+                    $optionToSelect.prop('selected', true);
+                    $selectElement.trigger('refresh');
+                }
+            }
             formWrap.addClass(formOpened);
             $html.toggleClass(overflowHidden);
             event.preventDefault();
@@ -53,9 +84,9 @@ $(function(){
         });
     }
     
-    formPopup('.create_membership,.edit_btn_membership','.membership_popup');
-    formPopup('.create_coupon,.edit_btn_coupon','.coupon_popup');
-    formPopup('.create_employee,.edit_btn_employee','.employee_popup');
+    formPopup('.create_membership,.edit_btn_membership','.membership_popup', true);
+    formPopup('.create_coupon,.edit_btn_coupon','.coupon_popup', true);
+    formPopup('.create_employee,.edit_btn_employee','.employee_popup', true);
     formPopup('.set_cashbacks','.set_cashbacks_popup');
     formPopup('.set_discounts','.set_discounts_popup');
     formPopup('.set_withdraws','.set_withdraws_popup');
@@ -248,7 +279,7 @@ $(function(){
     let coundFiled = 0;
     $(document).on('click', '.add_status_btn', function(){
         coundFiled++;
-        const fields = `<div class="field_row column-5">
+        const fields = `<div class="field_row column-6">
                         <div class="field">
                             <div class="field_name">Status title</div>
                             <input type="text" name="status[new_${coundFiled}]">

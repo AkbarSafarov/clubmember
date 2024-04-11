@@ -265,10 +265,12 @@ $(function(){
     $('#bg-picker').spectrum({
         type: "color",
         change: function(color) {
-            const colorBg = color.toHexString()
-            $('.card_color .color.active').removeClass('active');
-            $('.card_color .color_picker').addClass('active');
-            $('.card_design .card_item').css('backgroundColor', colorBg);
+            if(color) {
+                const colorBg = color.toHexString()
+                $('.card_color .color.active').removeClass('active');
+                $('.card_color .color_picker').addClass('active');
+                $('.card_design .card_item').css('backgroundColor', colorBg);
+            }
         }
     });
 
